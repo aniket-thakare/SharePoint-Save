@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "SharePoint Save",
+  "version": "1.0.0",
+  "description": "Capture SharePoint videomanifest URLs and generate FFmpeg commands",
+  "permissions": ["webRequest", "storage", "clipboardWrite"],
+  "host_permissions": [
+    "*://*.svc.ms/*",
+    "*://*.sharepoint.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

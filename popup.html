@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SharePoint Save</title>
+<style>
+@font-face {
+  font-family: "Chicago";
+  src: url("fonts/ChicagoFLF.ttf") format("truetype");
+}
+
+body {
+  font-family: "Chicago", monospace;
+  width: 360px;
+  padding: 5px;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #cfcfcf,
+      #cfcfcf 2px,
+      #bdbdbd 2px,
+      #bdbdbd 4px
+    );
+  color: black;
+}
+
+h3 { margin: 6px 0; font-size: 14px; }
+
+.panel {
+  border: 2px solid black;
+  background: white;
+  padding: 6px;
+  margin-bottom: 8px;
+}
+
+textarea, input {
+  width: 100%;
+  font-family: "Chicago", monospace;
+  font-size: 13px;
+  border: 2px solid black;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+textarea { height: 90px; }
+
+button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px;
+  font-family: "Chicago", monospace;
+  font-size: 13px;
+  border: 2px solid black;
+  background: #e6e6e6;
+  cursor: pointer;
+}
+
+button:active { background: #c0c0c0; }
+button.copied { background: #9acd32; }
+</style>
+</head>
+<body>
+
+<div class="panel">
+<h3>Captured SharePoint Video URL</h3>
+<textarea id="urlBox" readonly></textarea>
+</div>
+
+<div class="panel">
+<h3>Video File Name (optional)</h3>
+<input id="fileName" placeholder="video.mp4" />
+<button id="generate">Generate FFmpeg Command</button>
+</div>
+
+<div class="panel">
+<h3>FFmpeg Command</h3>
+<textarea id="commandBox" readonly></textarea>
+<button id="copyBtn">Copy Command</button>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
