@@ -31,29 +31,28 @@ Below are screenshots demonstrating installation and usage.
 ## 1️⃣ Install FFmpeg
 
 ### Windows
-- Download: https://www.gyan.dev/ffmpeg/builds/
+- Video demonstrating how to Download: https://www.youtube.com/watch?v=JR36oH35Fgg
 - Add `bin` folder to PATH
-- Verify:
+- Check Installation and Verify:
 ```bash
 ffmpeg -version
 ```
-
-Video: https://www.youtube.com/watch?v=IECI72XEox0
 
 ### macOS
-- Download: https://ffmpeg.martin-riedl.de/
+- Download PKG File : https://ffmpeg.martin-riedl.de/
+- Video demonstrating how to Download:https://www.youtube.com/watch?v=KAMuQTmGJUI&t=35s
+- Check Installation and Verify:
 ```bash
 ffmpeg -version
 ```
 
-Video: https://www.youtube.com/watch?v=8Q9jG4l4Npo
 
 ### Linux
 ```bash
 sudo apt install ffmpeg
 ```
+- Video demonstrating how to Download: 
 
-Video: https://www.youtube.com/watch?v=E0z6OZ6x0fI
 
 ---
 
@@ -98,5 +97,3 @@ cd ~/Downloads
 ```
 
 Paste command and press Enter.
-
----
