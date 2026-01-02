@@ -77,6 +77,8 @@ sudo apt install ffmpeg
 
 ## 4️⃣ Generate FFmpeg Command
 
+Paste command in terminal/CMD and press Enter.
+
 Example:
 ```bash
 ffmpeg -i "VIDEOMANIFEST_URL" -codec copy MyVideo.mp4
@@ -96,4 +98,3 @@ cd Downloads
 cd ~/Downloads
 ```
 
-Paste command and press Enter.
